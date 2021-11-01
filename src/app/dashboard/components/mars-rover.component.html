@@ -1,0 +1,73 @@
+  <mat-card>
+    <article>
+      <section>
+        <label>{{greetings}} {{greetingsFrom}}</label>
+      </section>
+      <section>
+        <label>{{ today | date: 'fullDate' }}</label>
+      </section>
+    </article>
+  </mat-card>
+
+  <form [formGroup]="roverFormGroup">
+    <mat-grid-list cols="2" rowHeight="250px">
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Rover 1</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div>
+              <mat-form-field floatLabel="always" appearance="outline">
+                <mat-label>Initial Position</mat-label>
+                <input matInput readonly formControlName="rover_1_initial_position" />
+              </mat-form-field>
+            </div>
+            <div>
+              <mat-form-field floatLabel="always" appearance="outline">
+                <mat-label>Movement instructions</mat-label>
+                <input matInput formControlName="rover_1_mov_instructions" />
+              </mat-form-field>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Rover 2</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div>
+              <mat-form-field floatLabel="always" appearance="outline">
+                <mat-label>Initial Position</mat-label>
+                <input matInput readonly formControlName="rover_2_initial_position" />
+              </mat-form-field>
+            </div>
+            <div>
+              <mat-form-field floatLabel="always" appearance="outline">
+                <mat-label>Movement instructions</mat-label>
+                <input matInput formControlName="rover_2_mov_instructions" />
+              </mat-form-field>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-grid-list cols="1" rowHeight="50px">
+      <mat-grid-tile>
+        <button class="button" (click)="executeInput()">Execute instructions</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-grid-list cols="1" rowHeight="450px">
+      <mat-grid-tile>
+        <div>
+          <canvas height="400" width="1000" baseChart [datasets]="lineChartData" [options]="lineChartOptions"
+            [chartType]="lineChartType">
+          </canvas>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </form>
