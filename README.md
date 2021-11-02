@@ -1,4 +1,4 @@
-# MarsRoverProblem
+# Mars Rover Problem Solution
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars. 
 
@@ -25,24 +25,39 @@ Each rover will be finished sequentially, which means that the second rover won'
 The output for each rover should be its final co-ordinates and heading.
 
 ## Assumptions used for development
-<!-- assuming rectangular plateau of x coordinate as 20 and y coordinate as 16 -->
+
+### Rectangular plateau of x coordinate as 20 and y coordinate as 16
+
 PLATEAU SIZE = 20 16
 
-<!-- Assuming 2 rovers landed on Mars -->
+### 2 rovers landed on Mars
+
 RoverName = rover_1 and rover_2
 
-<!-- Rover 1 -->
+### Rover 1
+
 Landing position = 4 8 N
+
 Movement Instructions = LMMLMMM
+
 Final position = 4 12 N
-<!-- rover 1 covered surface with coordinates - (0, 0), (8, 0), (8, 16), (0, 16) with following movement instructions -->
+
+### rover 1 covered surface with coordinates - (0, 0), (8, 0), (8, 16), (0, 16) with following movement instructions
+
 Initial position = [4 8 N]
+
 L - [4 8 S]
+
 M - [4 4 S]
+
 M - [4 0 S]
+
 L - [4 8 N]
+
 M - [4 4 N]
+
 M - [4 8 N]
+
 M - [4 12 N]
 
 <!-- Rover 2 -->
