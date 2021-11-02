@@ -1,3 +1,8 @@
+export const PlateauCoordinates = {
+    max_x: 20,
+    max_y: 16
+};
+
 export const Direction = {
     N: 'N',
     S: 'S',

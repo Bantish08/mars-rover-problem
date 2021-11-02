@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
-import { Direction, ErrorMessage, Greetings, Move, RoverName } from 'src/app/shared/constant';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Direction, ErrorMessage, Greetings, Move, PlateauCoordinates, RoverName } from 'src/app/shared/constant';
 import { Coordinates } from 'src/app/shared/models/coordinates.model';
 import { Plateau } from 'src/app/shared/models/plateau.model';
 import { Rover } from 'src/app/shared/models/rover.model';
@@ -14,18 +14,17 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./mars-rover.component.scss']
 })
 export class MarsRoverComponent implements OnInit {
+  // delcaring charts varibles
   lineChartData: ChartDataSets[] = [
     {
       data: [{ x: 4, y: 8 }],
       label: 'Rover 1',
       steppedLine: 'before',
-
     },
     {
       data: [{ x: 12, y: 8 }],
       label: 'Rover 2',
       steppedLine: 'before',
-
     }
   ];
 
@@ -65,7 +64,6 @@ export class MarsRoverComponent implements OnInit {
       }]
     }
   };
-
   lineChartType = <const>"line";
 
   // form group name
@@ -76,24 +74,25 @@ export class MarsRoverComponent implements OnInit {
   today: Date = new Date();
   greetingsFrom: string = Greetings.From;
 
-  // defining variables to execute rover sequentially
-  firstRoverExecutionCompleted: boolean = false;
-  secondRoverExecutionCompleted: boolean = false;
-
   constructor(
+    // formBuilder declared to build form - a helper API in angular
     private formBuilder: FormBuilder,
+    // toastrService declared to create notification popup
     private toastr: ToastrService
   ) {
-    // initializing dummy data
+    // initializing dummy data in the form
     this.roverFormGroup = this.formBuilder.group({
       rover_1_initial_position: ['4 8 N'],
-      rover_1_mov_instructions: ['LMMLMMM'],
+      rover_1_mov_instructions: ['LMMLMMM', Validators.required],
       rover_2_initial_position: ['12 8 W'],
-      rover_2_mov_instructions: ['RMMRMMML']
+      rover_2_mov_instructions: ['RMMRMMML', Validators.required],
+      rover_1_final_reading: [''],
+      rover_2_final_reading: ['']
     });
   }
 
   ngOnInit() {
+    // initializing and setting system time to display greetings
     this.systemTime();
   }
 
@@ -103,7 +102,7 @@ export class MarsRoverComponent implements OnInit {
   }
 
   executeInput() {
-    // validations for movement instructions field
+    // validations on movement instructions field
     if (this.roverFormGroup.get('rover_1_initial_position')?.value !== "" || this.roverFormGroup.get('rover_1_initial_position')?.value !== null) {
       this.initializeRoverData(RoverName.rover_1);
     } else {
@@ -118,7 +117,7 @@ export class MarsRoverComponent implements OnInit {
   }
 
   initializeRoverData(rover: string) {
-    // defining rover position variables
+    // defining rover position variables and movement instructions
     let position_x;
     let position_y;
     let positionDirection;
@@ -136,10 +135,10 @@ export class MarsRoverComponent implements OnInit {
         // assigned rover_1 position heading
         positionDirection = rover_1_initial_position[2];
 
-        // sending the movement instructions
+        // sending the movement instructions to rover_1
         movementInstructions = this.roverFormGroup.get('rover_1_mov_instructions')?.value;
 
-        // sending rover varibles for movement
+        // sending rover_1 variables for movement
         this.prepareRoverToMove(position_x, position_y, positionDirection, movementInstructions, RoverName.rover_1);
 
         break;
@@ -151,13 +150,13 @@ export class MarsRoverComponent implements OnInit {
         position_x = initial_position[0];
         position_y = initial_position[1];
 
-        // assigned rover_1 position heading
+        // assigned rover_2 position heading
         positionDirection = initial_position[2];
 
-        // sending the movement instructions
+        // sending the movement instructions to rover_2
         movementInstructions = this.roverFormGroup.get('rover_2_mov_instructions')?.value;
 
-        // sending rover varibles for movement
+        // sending rover_2 variables for movement
         this.prepareRoverToMove(position_x, position_y, positionDirection, movementInstructions, RoverName.rover_2);
 
         break;
@@ -165,22 +164,30 @@ export class MarsRoverComponent implements OnInit {
   }
 
   prepareRoverToMove(position_x: number, position_y: number, positionDirection: string, movementInstructions: string, roverName: string) {
-    // Assuming plateau max x-coords = 20 and y-coords = 16
-    let plateau_x = 20;
-    let plateau_y = 16;
+    // Assuming plateau max x-coords and max y-coords
+    let plateau_x = PlateauCoordinates.max_x;
+    let plateau_y = PlateauCoordinates.max_y;
 
-    // setting the x and y coordinates of the plateau
+    // setting the x and y coordinates of the plateau in Plateau class
     let plateau = new Plateau(new Coordinates(plateau_x, plateau_y));
 
+    // defining rover
     let rover = new Rover(new RoverPosition(new Coordinates(position_x, position_y), positionDirection));
+
+    // iterating through each movement instructions string and moving rover
     for (let i = 0; i < movementInstructions.length; i++) {
       let anInstruction = movementInstructions[i];
       this.moveRover(anInstruction, rover, plateau, roverName);
     }
+
+    // outputting the final reading in field
+    roverName === RoverName.rover_1 ? this.roverFormGroup.controls['rover_1_final_reading'].setValue(rover.currentPositon.coordinates.x + " " + rover.currentPositon.coordinates.y + " " + rover.currentPositon.direction) : this.roverFormGroup.controls['rover_2_final_reading'].setValue(rover.currentPositon.coordinates.x + " " + rover.currentPositon.coordinates.y + " " + rover.currentPositon.direction);
+
   }
 
   moveRover(move: any, rover: Rover, plateau: Plateau, roverName: string) {
     let coordinates: Coordinates;
+    // conditions based on possible rover movement - L,R and M
     switch (move) {
       case Move.L:
         rover.currentPositon.direction = this.getDirection(rover.currentPositon.direction, move);
@@ -193,6 +200,8 @@ export class MarsRoverComponent implements OnInit {
         if (coordinates.x > plateau.limits.x || coordinates.y > plateau.limits.y) {
           this.toastr.error(ErrorMessage.exceedPlateauLimit);
         }
+
+        // plotting rover coordinates in chart
         if (roverName === RoverName.rover_1) {
           const data: any = this.lineChartData[0].data;
           data.push({ x: coordinates.x, y: coordinates.y });
@@ -209,6 +218,7 @@ export class MarsRoverComponent implements OnInit {
 
   getRoverLocation(currentPostion: RoverPosition) {
     let direction = currentPostion.direction;
+    // moving rover based on it's initial heading
     if (direction === Direction.N) {
       return new Coordinates(Number(currentPostion.coordinates.x), Number(currentPostion.coordinates.y) + 4);
     } else if (direction === Direction.S) {
