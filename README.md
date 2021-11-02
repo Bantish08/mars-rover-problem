@@ -84,6 +84,26 @@ M - [8 8 W]
 
 L - [8 8 E]
 
+### Main Validations
+
+1. Conditions set in code to check the rover movement instructions coordinates before movement if the new coordinates are set outside the rectangular range.
+
+2. Conditions to check if coordinates from movement instructions is x+y = prime number -> rover shall prompt user with an error message as rover cannot move to such coordinates.
+
+# Further Improvements
+
+Use of Artificial Intelligence(AI) and Machine Learning(ML) to allow the rover movements by itselfs instead of human commands sent all the way from Earth - this can save mission time and boost the speed at which the rover gathers data.
+
+1. My approach would be to instruct the rovers what are the possible data input and output.
+
+2. Set condition where x+y cannot equal a prime number so that it knows that it should never move to the coordinate and predict further possibilities of movement.
+
+3. On landing on Mars, each rover shall communicate their coordinates and set the area they will be covering.
+
+4. When first rover moves, it also send the coordinates and area covered to the other waiting rovers.
+
+5. Second rover shall then predict it's movement instructions and area it will be covering based on the first rover output and other rovers shall continue the communication.
+
 ## Running the project
 
 Navigate to the project directory and run `npm install` to install required dependencies before starting the project.

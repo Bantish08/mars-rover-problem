@@ -1,0 +1,985 @@
+
+ÅC__Users_bansre_Documents_Assessment_mars_rover_problem_src_app_dashboard_components_mars_rover_component_ts_233_15_FE_10_dir_movx
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÈ È(-"s10_1*Û
+s10_1
+<synthetic> (I
+G
+
+__unknown_file (
+	%sc-P_7_0"__id**
+
+%env"
+
+%scope-P_7K
+I
+
+__unknown_file (	
+%expr_0"__id**
+
+	%sc-P_7_0"
+	Direction©
+¶
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÏ Ï(!
+%fieldAccess_0"__id**
+	
+%expr_0"
+Nª
+∏
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÏ Ï(!
+%binOpRes_0"
+__js_equal*
+
+	direction*
+
+%fieldAccess_0A
+?
+
+__unknown_file (
+
+%leftAnd_0"__id*
+
+%binOpRes_0*
+s10_2
+s10_4*Í
+s10_2
+<synthetic> (I
+G
+
+__unknown_file (
+	%sc-P_7_1"__id**
+
+%env"
+
+%scope-P_7F
+D
+
+__unknown_file (	
+%expr_1"__id**
+
+	%sc-P_7_1"
+Move©
+¶
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÏ% Ï(4
+%fieldAccess_1"__id**
+	
+%expr_1"
+L∂
+≥
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÏ% Ï(4
+%binOpRes_1"
+__js_equal*
+
+move*
+
+%fieldAccess_1B
+@
+
+__unknown_file (
+%rightAnd_0"__id*
+
+%binOpRes_1*
+s10_3
+s10_4*‰
+s10_3
+<synthetic>   (I
+G
+
+__unknown_file (
+	%sc-P_7_2"__id**
+
+%env"
+
+%scope-P_7K
+I
+
+__unknown_file (	
+%expr_2"__id**
+
+	%sc-P_7_2"
+	Direction°
+û
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÌ Ì(
+result"__id**
+	
+%expr_2"
+S*
+s10_33*Û
+s10_4
+<synthetic> (I
+G
+
+__unknown_file (
+	%sc-P_7_3"__id**
+
+%env"
+
+%scope-P_7K
+I
+
+__unknown_file (	
+%expr_3"__id**
+
+	%sc-P_7_3"
+	Direction©
+¶
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÓ Ó('
+%fieldAccess_2"__id**
+	
+%expr_3"
+Nª
+∏
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÓ Ó('
+%binOpRes_2"
+__js_equal*
+
+	direction*
+
+%fieldAccess_2A
+?
+
+__unknown_file (
+
+%leftAnd_1"__id*
+
+%binOpRes_2*
+s10_5
+s10_7*Í
+s10_5
+<synthetic> (I
+G
+
+__unknown_file (
+	%sc-P_7_4"__id**
+
+%env"
+
+%scope-P_7F
+D
+
+__unknown_file (	
+%expr_4"__id**
+
+	%sc-P_7_4"
+Move©
+¶
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÓ+ Ó(9
+%fieldAccess_3"__id**
+	
+%expr_4"
+R∂
+≥
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÓ+ Ó(9
+%binOpRes_3"
+__js_equal*
+
+move*
+
+%fieldAccess_3B
+@
+
+__unknown_file (
+%rightAnd_1"__id*
+
+%binOpRes_3*
+s10_6
+s10_7*‰
+s10_6
+<synthetic> (I
+G
+
+__unknown_file (
+	%sc-P_7_5"__id**
+
+%env"
+
+%scope-P_7K
+I
+
+__unknown_file (	
+%expr_5"__id**
+
+	%sc-P_7_5"
+	Direction°
+û
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÔ Ô(
+result"__id**
+	
+%expr_5"
+S*
+s10_32*Ù
+s10_7
+<synthetic> (I
+G
+
+__unknown_file (
+	%sc-P_7_6"__id**
+
+%env"
+
+%scope-P_7K
+I
+
+__unknown_file (	
+%expr_6"__id**
+
+	%sc-P_7_6"
+	Direction©
+¶
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts ('
+%fieldAccess_4"__id**
+	
+%expr_6"
+Eª
+∏
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts ('
+%binOpRes_4"
+__js_equal*
+
+	direction*
+
+%fieldAccess_4A
+?
+
+__unknown_file (
+
+%leftAnd_2"__id*
+
+%binOpRes_4*
+s10_8
+s10_10*Î
+s10_8
+<synthetic> (I
+G
+
+__unknown_file (
+	%sc-P_7_7"__id**
+
+%env"
+
+%scope-P_7F
+D
+
+__unknown_file (	
+%expr_7"__id**
+
+	%sc-P_7_7"
+Move©
+¶
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts+ (9
+%fieldAccess_5"__id**
+	
+%expr_7"
+L∂
+≥
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts+ (9
+%binOpRes_5"
+__js_equal*
+
+move*
+
+%fieldAccess_5B
+@
+
+__unknown_file (
+%rightAnd_2"__id*
+
+%binOpRes_5*
+s10_9
+s10_10*‰
+s10_9
+<synthetic> (I
+G
+
+__unknown_file (
+	%sc-P_7_8"__id**
+
+%env"
+
+%scope-P_7K
+I
+
+__unknown_file (	
+%expr_8"__id**
+
+	%sc-P_7_8"
+	Direction°
+û
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÒ Ò(
+result"__id**
+	
+%expr_8"
+W*
+s10_31*ˆ
+s10_10
+<synthetic> (I
+G
+
+__unknown_file (
+	%sc-P_7_9"__id**
+
+%env"
+
+%scope-P_7K
+I
+
+__unknown_file (	
+%expr_9"__id**
+
+	%sc-P_7_9"
+	Direction©
+¶
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÚ Ú('
+%fieldAccess_6"__id**
+	
+%expr_9"
+Eª
+∏
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÚ Ú('
+%binOpRes_6"
+__js_equal*
+
+	direction*
+
+%fieldAccess_6A
+?
+
+__unknown_file (
+
+%leftAnd_3"__id*
+
+%binOpRes_6*
+s10_11
+s10_13*Ò
+s10_11
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_10"__id**
+
+%env"
+
+%scope-P_7H
+F
+
+__unknown_file (
+
+%expr_10"__id**
+
+
+%sc-P_7_10"
+Move™
+ß
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÚ+ Ú(9
+%fieldAccess_7"__id**
+
+
+%expr_10"
+R∂
+≥
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÚ+ Ú(9
+%binOpRes_7"
+__js_equal*
+
+move*
+
+%fieldAccess_7B
+@
+
+__unknown_file (
+%rightAnd_3"__id*
+
+%binOpRes_7*
+s10_12
+s10_13*È
+s10_12
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_11"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_11"__id**
+
+
+%sc-P_7_11"
+	Direction¢
+ü
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÛ Û(
+result"__id**
+
+
+%expr_11"
+W*
+s10_30*˙
+s10_13
+<synthetic>	 	(J
+H
+
+__unknown_file (
+
+%sc-P_7_12"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_12"__id**
+
+
+%sc-P_7_12"
+	Direction™
+ß
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÙ Ù('
+%fieldAccess_8"__id**
+
+
+%expr_12"
+Sª
+∏
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÙ Ù('
+%binOpRes_8"
+__js_equal*
+
+	direction*
+
+%fieldAccess_8A
+?
+
+__unknown_file (
+
+%leftAnd_4"__id*
+
+%binOpRes_8*
+s10_14
+s10_16*Ò
+s10_14
+<synthetic>
+ 
+(J
+H
+
+__unknown_file (
+
+%sc-P_7_13"__id**
+
+%env"
+
+%scope-P_7H
+F
+
+__unknown_file (
+
+%expr_13"__id**
+
+
+%sc-P_7_13"
+Move™
+ß
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÙ+ Ù(9
+%fieldAccess_9"__id**
+
+
+%expr_13"
+L∂
+≥
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsÙ+ Ù(9
+%binOpRes_9"
+__js_equal*
+
+move*
+
+%fieldAccess_9B
+@
+
+__unknown_file (
+%rightAnd_4"__id*
+
+%binOpRes_9*
+s10_15
+s10_16*È
+s10_15
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_14"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_14"__id**
+
+
+%sc-P_7_14"
+	Direction¢
+ü
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsı ı(
+result"__id**
+
+
+%expr_14"
+N*
+s10_29*˛
+s10_16
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_15"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_15"__id**
+
+
+%sc-P_7_15"
+	Direction´
+®
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsˆ ˆ('
+%fieldAccess_10"__id**
+
+
+%expr_15"
+SΩ
+∫
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsˆ ˆ('
+%binOpRes_10"
+__js_equal*
+
+	direction*
+
+%fieldAccess_10B
+@
+
+__unknown_file (
+
+%leftAnd_5"__id*
+
+%binOpRes_10*
+s10_17
+s10_19*ı
+s10_17
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_16"__id**
+
+%env"
+
+%scope-P_7H
+F
+
+__unknown_file (
+
+%expr_16"__id**
+
+
+%sc-P_7_16"
+Move´
+®
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsˆ+ ˆ(9
+%fieldAccess_11"__id**
+
+
+%expr_16"
+R∏
+µ
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsˆ+ ˆ(9
+%binOpRes_11"
+__js_equal*
+
+move*
+
+%fieldAccess_11C
+A
+
+__unknown_file (
+%rightAnd_5"__id*
+
+%binOpRes_11*
+s10_18
+s10_19*È
+s10_18
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_17"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_17"__id**
+
+
+%sc-P_7_17"
+	Direction¢
+ü
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts˜ ˜(
+result"__id**
+
+
+%expr_17"
+N*
+s10_28*˛
+s10_19
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_18"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_18"__id**
+
+
+%sc-P_7_18"
+	Direction´
+®
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts¯ ¯('
+%fieldAccess_12"__id**
+
+
+%expr_18"
+WΩ
+∫
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts¯ ¯('
+%binOpRes_12"
+__js_equal*
+
+	direction*
+
+%fieldAccess_12B
+@
+
+__unknown_file (
+
+%leftAnd_6"__id*
+
+%binOpRes_12*
+s10_20
+s10_22*ı
+s10_20
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_19"__id**
+
+%env"
+
+%scope-P_7H
+F
+
+__unknown_file (
+
+%expr_19"__id**
+
+
+%sc-P_7_19"
+Move´
+®
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts¯+ ¯(9
+%fieldAccess_13"__id**
+
+
+%expr_19"
+L∏
+µ
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts¯+ ¯(9
+%binOpRes_13"
+__js_equal*
+
+move*
+
+%fieldAccess_13C
+A
+
+__unknown_file (
+%rightAnd_6"__id*
+
+%binOpRes_13*
+s10_21
+s10_22*È
+s10_21
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_20"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_20"__id**
+
+
+%sc-P_7_20"
+	Direction¢
+ü
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts˘ ˘(
+result"__id**
+
+
+%expr_20"
+E*
+s10_27*˛
+s10_22
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_21"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_21"__id**
+
+
+%sc-P_7_21"
+	Direction´
+®
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts˙ ˙('
+%fieldAccess_14"__id**
+
+
+%expr_21"
+WΩ
+∫
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts˙ ˙('
+%binOpRes_14"
+__js_equal*
+
+	direction*
+
+%fieldAccess_14B
+@
+
+__unknown_file (
+
+%leftAnd_7"__id*
+
+%binOpRes_14*
+s10_23
+s10_25*ı
+s10_23
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_22"__id**
+
+%env"
+
+%scope-P_7H
+F
+
+__unknown_file (
+
+%expr_22"__id**
+
+
+%sc-P_7_22"
+Move´
+®
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts˙+ ˙(9
+%fieldAccess_15"__id**
+
+
+%expr_22"
+R∏
+µ
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts˙+ ˙(9
+%binOpRes_15"
+__js_equal*
+
+move*
+
+%fieldAccess_15C
+A
+
+__unknown_file (
+%rightAnd_7"__id*
+
+%binOpRes_15*
+s10_24
+s10_25*È
+s10_24
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_23"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_23"__id**
+
+
+%sc-P_7_23"
+	Direction¢
+ü
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts˚ ˚(
+result"__id**
+
+
+%expr_23"
+E*
+s10_26*È
+s10_25
+<synthetic> (J
+H
+
+__unknown_file (
+
+%sc-P_7_24"__id**
+
+%env"
+
+%scope-P_7M
+K
+
+__unknown_file (
+
+%expr_24"__id**
+
+
+%sc-P_7_24"
+	Direction¢
+ü
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.ts˝ ˝(
+result"__id**
+
+
+%expr_24"
+S*
+s10_26*)
+s10_26
+<synthetic> (*
+s10_27*)
+s10_27
+<synthetic> (*
+s10_28*)
+s10_28
+<synthetic> (*
+s10_29*)
+s10_29
+<synthetic> (*
+s10_30*)
+s10_30
+<synthetic> (*
+s10_31*)
+s10_31
+<synthetic> (*
+s10_32*)
+s10_32
+<synthetic> (*
+s10_33*®
+s10_33
+<synthetic>! !("Ü
+x
+lC:/Users/bansre/Documents/Assessment/mars-rover-problem/src/app/dashboard/components/mars-rover.component.tsˇ ˇ(
+
+
+result:
+%env:
+	direction:
+moveB 

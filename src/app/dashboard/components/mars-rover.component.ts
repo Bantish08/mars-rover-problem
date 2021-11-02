@@ -197,8 +197,15 @@ export class MarsRoverComponent implements OnInit {
         break;
       case Move.M:
         coordinates = this.getRoverLocation(rover.currentPositon);
+        // condition to check if x and y coordinates are greater than plateau x and y coordinates
         if (coordinates.x > plateau.limits.x || coordinates.y > plateau.limits.y) {
           this.toastr.error(ErrorMessage.exceedPlateauLimit);
+        }
+
+        // condition to check if rover next movement coordinates is x+y = prime number
+        let number = Number(coordinates.x) + Number(coordinates.y);
+        if (this.isPrimeNumber(number)) {
+          this.toastr.error(roverName + ErrorMessage.is_prime_number);
         }
 
         // plotting rover coordinates in chart
@@ -213,6 +220,17 @@ export class MarsRoverComponent implements OnInit {
         break;
       default:
         this.toastr.error(ErrorMessage.invalidMove);
+    }
+  }
+
+  isPrimeNumber(number: number) {
+    if (number < 2) return false;
+
+    for (var k = 2; k < number; k++) {
+      if (number % k === 0) {
+        return false;
+      }
+      return true;
     }
   }
 

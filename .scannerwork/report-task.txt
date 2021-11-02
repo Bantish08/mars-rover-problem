@@ -1,0 +1,6 @@
+projectKey=mars-rover-problem
+serverUrl=http://localhost:9000
+serverVersion=9.1.0.47736
+dashboardUrl=http://localhost:9000/dashboard?id=mars-rover-problem
+ceTaskId=AXzgX4JNJQ6QlR_VSt7t
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXzgX4JNJQ6QlR_VSt7t

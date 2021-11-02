@@ -32,5 +32,6 @@ export const ErrorMessage = {
     invalidMove: 'Invalide rover move',
     exceedPlateauLimit: 'Invalid Rover move - exceed plateau limit',
     rover_1_input_missing: 'Rover 1 - Input missing',
-    rover_2_input_missing: 'Rover 2 - Input missing'
+    rover_2_input_missing: 'Rover 2 - Input missing',
+    is_prime_number: ' cannot on coordinates where x-axis + y-axis is a prime number'
 };
