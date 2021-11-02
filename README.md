@@ -34,7 +34,7 @@ PLATEAU SIZE = 20 16
 
 RoverName = rover_1 and rover_2
 
-### Rover 1
+## Rover 1
 
 Landing position = 4 8 N
 
@@ -42,9 +42,7 @@ Movement Instructions = LMMLMMM
 
 Final position = 4 12 N
 
-### rover 1 covered surface with coordinates - (0, 0), (8, 0), (8, 16), (0, 16) with following movement instructions
-
-Initial position = [4 8 N]
+### Covered surface with coordinates - (0, 0), (8, 0), (8, 16), (0, 16) with following movement instructions
 
 L - [4 8 S]
 
@@ -60,19 +58,30 @@ M - [4 8 N]
 
 M - [4 12 N]
 
-<!-- Rover 2 -->
+## Rover 2
+
 Landing position = 12 8 W
+
 Movement Instructions = RMMRMMML
+
 Final position = 4 8 E
-<!-- rover 1 covered surface with coordinates - (8, 0), (20, 0), (20, 16), (8, 16) with following movement instructions -->
-Initial position = [12 8 W]
+
+### Covered surface with coordinates - (8, 0), (20, 0), (20, 16), (8, 16) with following movement instructions
+
 R - [12 8 E]
+
 M - [16 8 E]
+
 M - [20 8 E]
+
 R - [20 8 W]
+
 M - [16 8 W]
+
 M - [12 8 W]
+
 M - [8 8 W]
+
 L - [8 8 E]
 
 ## Running the project
